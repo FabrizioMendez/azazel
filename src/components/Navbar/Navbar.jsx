@@ -8,13 +8,17 @@ const Navbar = () => {
   console.log(totalQty)
   return (
     <>
-    <Link to='/'>Cocina</Link>
-    <Link to='/sabor/Dulce'>Dulces</Link>
-    <Link to='/sabor/Salado'>Salados</Link>
-    <Link to='/sabor/Especial'>Especiales</Link>
-    <Link to='/cart'>Carrito</Link>
+    <div className='links'>
+    <Link className='link' to='/'>Cocina</Link>
+    <Link className='link' to='/sabor/Dulce'>Dulces</Link>
+    <Link className='link' to='/sabor/Salado'>Salados</Link>
+    <Link className='link' to='/sabor/Especial'>Especiales</Link>
+    <Link className='link' to='/cart'>Carrito</Link>
+    </div>
+    <div className='cantidades'>
     <p>Cantidad de Panqueques: {totalQty}</p>
     <p>Precio Total a Pagar: ${totalPrice}</p>
+    </div>
     </>
   )
 }

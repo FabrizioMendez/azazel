@@ -1,3 +1,18 @@
-.Navbar{
-    
+.links{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.link{
+    margin-right: 25px;
+    flex-direction: row;
+    border: 2px black solid;
+    background-color: bisque;
+    text-decoration: none;
+    text-align: center;
+    height: 50px;
+    width: 100px;
+}
+.cantidades{
+    margin-top: 10px;
 }

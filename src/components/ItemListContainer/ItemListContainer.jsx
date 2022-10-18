@@ -27,7 +27,8 @@ useEffect (() => {
     setLoading(true)
   }
 }, [saboresId]);
-  return loading ? <p>COCINANDO....</p> : <ItemList propContainerPanqueques = {statePanqueques} />;
+  return loading ? <p>COCINANDO....</p> : <ItemList className='platos' propContainerPanqueques = {statePanqueques} />;
+  
 }
 
 export default ItemListContainer
